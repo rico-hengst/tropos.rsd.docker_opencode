@@ -1,0 +1,10 @@
+name: p3.11_docker
+channels:
+  - defaults
+dependencies:
+  - ipython=9.15.0
+  - numpy=2.4.2
+  - numpy-base=2.4.2
+  - pip:
+      - cryptography==46.0.6
+      - maskpass==0.3.7
