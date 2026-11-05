@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <div align="centerv" style="margin-bottom: 1ex;padding-bottom: 1ex">
     <img src="config/docker_opencode.png" alt="Logo" height="90"><br/>
-    Docker sandbox for safe use of AI coding agent <em>OpenCode</em> in terminal environment
 </div>
+Docker sandbox for safe use of AI coding agent <em>OpenCode</em> in terminal environment
 
 [![Opencode][Opencode-logo]][Opencode-url] [![Docker][Docker-logo]][Docker-url] [![Anaconda][Anaconda-logo]][Anaconda-url] [![GWDG][Gwdg-logo]][Gwdg-url]
 
