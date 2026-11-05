@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="centerv" style="margin-bottom: 7ex;">
     <img src="config/docker_opencode.png" alt="Logo" height="90"><br/>
-    Docker sandbox for safe use of AI coding agent *OpenCode* in terminal environment
+    Docker sandbox for safe use of AI coding agent <em>OpenCode</em> in terminal environment
 </div>
 
 [![Opencode][Opencode-logo]][Opencode-url] [![Docker][Docker-logo]][Docker-url] [![Anaconda][Anaconda-logo]][Anaconda-url] [![GWDG][Gwdg-logo]][Gwdg-url]
@@ -39,8 +39,6 @@ The coding agents operates via
 * IDE, or
 * Cloud environments.
 
----
-
 The coding agent **"Opencode" and the "terminal based operating environment"** will be the focus here.
 
 
@@ -51,10 +49,12 @@ The coding agent only has access to the content of the software repository at yo
 The sandbox is already equipped with a customizable python anaconda environment. If your software repository at the host is python based, so the python code can also be executed into the sandbox.
 
 #### Description short
-1. After you've successfully cloned the Opencode Sandbox repo somewhere to your host computer (e.g: ```<~/docker_opencode>```), you'll first need some configuration steps and at the end you have to build your own Docker image.
-2. You can then run the image you created as container with a mounted directory from your host computer.
+1. **Prepartion**: After you've successfully cloned the Opencode Sandbox repo somewhere to your host computer (e.g: ```<~/docker_opencode>```), you'll first need some configuration steps and at the end you have to build your own Docker image.
+2. **Usage**: You can then run the image you created as container with a mounted directory from your host computer.
     a) You can mount any directory at your host that contains the software repository you want to work on (e.g:  ```</xyz/yourproject>```).
     b) In the simplest case, this can be the Opencode Sandbox repo you just cloned (e.g: ```<~/docker_opencode>```).
+
+-----------
 
 #### Preparation
 **Prep 1.** Clone this repository to you host computer: e.g: ```<~/docker_opencode>```
@@ -148,7 +148,10 @@ cd <~/docker_opencode>
 docker build --build-arg SAIA_API_KEY="${SAIA_API_KEY}" -t image_sbx_opencode_anaconda:latest     -f .mydocker/Dockerfile.conda     --build-arg ENV_FILE=environment.yml .
 ```
 
-**6.** Run Docker image as container and connect to the Opencode Sandbox repository ```<~/docker_opencode>``` at your host computer and test OpenCode coding agent
+#### Usage
+
+
+**Usage 1.** Run Docker image as container and connect to the Opencode Sandbox repository ```<~/docker_opencode>``` at your host computer and test OpenCode coding agent
 
 ```shell
 # run container
@@ -168,7 +171,7 @@ opencode auth list
 OPENCODE_CONFIG=$PWD/.opencode/opencode.jsonc opencode debug config
 ```
 
-**7.** Run Docker iamge as container and connect to your host software repository ```</xyz/yourproject>``` and use OpenCode via terminal
+**Usage 2.** Run Docker iamge as container and connect to your host software repository ```</xyz/yourproject>``` and use OpenCode via terminal
 
 ```shell
 # run container
